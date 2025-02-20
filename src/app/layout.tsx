@@ -29,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <ScreenPreferencesProvider>{children}</ScreenPreferencesProvider>
+       <Providers>
+          <ScreenPreferencesProvider>{children}</ScreenPreferencesProvider>
+        </Providers>
  
       </body>
     </html>
